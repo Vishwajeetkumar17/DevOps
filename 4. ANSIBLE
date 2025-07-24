@@ -501,6 +501,35 @@ HISTORY:
   157  history
 =============================================================================================================
 
+CLUSTER: GROUP OF NODES/SERVERS
+HOMOGENIUS: SERVERS WITH SAME OS AND FLAVOUR
+HETEROGENEOUS: SERVERS WITH DIFFERENT OS AND FLAVOUR
+
+EX-1:
+- hosts: all
+  tasks :
+    - name: installing git* on RedHat
+      yum: name=git* state=present
+      when: ansible os_family "RedHat"
+   - name: installing git* on Ubuntu
+     apt: name=git* state=present
+     when: ansible os_family "Debian"
+	
+sed -i "s/present/absent/g" raham.yml
+
+EX-2:
+- hosts: all
+  tasks:
+    - name: installing apache on RedHat
+      yum: name-httpd state=present
+      when: ansible os_family "RedHat"
+   - name: installing apache on Ubuntu
+     apt: name=apache2 state-present
+     when: ansible os_family "Debian"
+
+sed -i "s/ present/absent/g" raham.yml
+
+==============================================================================================================
 HANDLERS: here one task depends on another task.
 when task-1 is executed it will call task-2 to perform the action.
 ex: if we want to restart httpd we need to install it
