@@ -283,6 +283,12 @@ RAW >> COMMAND >> SHELL
 
 sed -i 's/install/remove/g' raham.yml
 
+--> sed command is used to replace old word with new.
+sed: stream editor command
+-i: edit file in-place
+"s/install/remove/g": substitution command (add → remove, globally)
+file1.yaml: target file to apply the command
+
 - hosts: all
   tasks:
     - name: remove git
