@@ -481,8 +481,8 @@ HISTORY:
   136  ansible-playbook raham.yml
   137  cd .ssh
   138  ll
-  139  cat known_hosts
-  140  ansible all --list-host
+  139  cat known_hosts                   --> it will show worker node connected to the ansible server
+  140  ansible all --list-host           -->  show nodes which are in inventry file
   141  vim /etc/ansible/hosts
   142  ansible all --list-host
   143  vim /etc/ansible/hosts
@@ -492,11 +492,10 @@ HISTORY:
   147  vim /etc/ansible/hosts
   148  ll
   149  cd
-  150  ansible setup -m all
-  151  ansible all -m setup
-  152  ansible all -m setup | grep -i cpus
-  153  ansible all -m setup | grep -i memory
-  154  ansible all -m setup | grep -i mem
+  150  ansible setup -m all 
+  151  ansible all -m setup                   --> setup module will print complete information of a worker node
+  152  ansible all -m setup | grep -i cpus    --> cpu info of a worker node
+  154  ansible all -m setup | grep -i mem     --> memory information
   155  ansible all -m setup | grep -i cpus
   156  ansible all -m setup | grep -i mem
   157  history
