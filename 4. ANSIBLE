@@ -739,6 +739,10 @@ HISTORY:
 
 ===============================================
 
+TO PRINT THE MESSAGE IN TERMINAL USING ANSIBLE-PLAYBOOK : 
+
+COMMAND TO VIEW ALL THESE BELOW DETAILS ARE : ansible all -m setup
+
 ansible_hostname
 ansible_memfree_mb
 ansible_memtotal_mb
