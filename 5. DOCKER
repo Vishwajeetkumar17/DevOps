@@ -69,6 +69,7 @@ docker stop cont1	: to stop cont1
 docker kill cont1	: to stop immedieatly cont1
 docker ps 		: to see running containers
 docker ps -a		: to see all containers
+docker attach cont1   :  to go inside the container
 
 HISTORY:
   1  yum install docker -y
