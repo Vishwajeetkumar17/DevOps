@@ -100,7 +100,7 @@ OS LEVEL VIRTUALIZATION:
 
 NOTE: apt is package manager for ubuntu
 Redhat: Yum
-Ubuntu: Apt
+Ubuntu: Apt (Advance Package Tool)
 
 without running apt update -y we cant install packages
 
