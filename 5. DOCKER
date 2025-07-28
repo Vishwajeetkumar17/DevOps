@@ -592,7 +592,7 @@ SELF HEALING: automatically recreates container itself.
 
 CLUSTER LEVEL ACTIVITES:
 docker swarm leave(worker node)	: to down the woker node
-docker node rm id (manager node): to remove the node permenanetly
+docker node rm id (manager node): to remove the node permenanetly   [ to search id use command : docker swarm ls]
 docker swarm join-token manager : to regenerate the token
 
 
