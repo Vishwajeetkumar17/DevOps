@@ -578,7 +578,7 @@ in real time we use rbac concept to restrict the access from one namespace to an
 so users cant access/delete ns, because of the restriction we provide.
 we create roles and rolebind for the users.
 
-
+==================================================================================
 SERVICE: It is used to expose the application in k8s.
 
 TYPES:
