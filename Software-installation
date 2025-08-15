@@ -1,0 +1,62 @@
+For Web-Server
+
+history
+    1  sudo apt  update -y
+    2  sudo apt  upgrade -y
+    3  apt install apache2 -y
+    4  cd /var/www/html/
+    5  git clone https://github.com/CleverProgrammers/pwj-netflix-clone.git
+    6  ll
+    7  mv pwj-netflix-clone/* .
+    8  ll
+   11  apt purge apache2* -y
+   12  apt install nginx -y
+   13  systemclt status nginx
+   14  systemctl status nginx
+   15  history
+
+================================================================================================
+
+For App-Server
+
+history
+    1  apt update -y
+    2  apt-get install default-jre -y
+    3  apt-get install default-jdk -y
+    4  java -version
+    5  apt install vim -y
+    6  vim /etc/profile.d/jdk11.sh
+    7  echo $JAVA_HOME
+    8  echo $PATH
+    9  reboot
+   10  echo $JAVA_HOME
+   11  echo $PATH
+   12  vim Simple.java
+   13  javac Simple.java
+   14  ll
+   15  java Simple.java
+   17  apt-get update -y
+   18  apt-get intall python3 -y
+   19  apt-get install python3 -y
+   20  apt-get install python3.8 -y
+   21  apt install python3-pip -y
+   22  pip install NumPy
+   23  apt-get install python3.12 -y
+   24  python -version
+   25  python --version
+   26  python3 --version
+   27  apt-get install python3.12.3 -y
+   28  pip install NumPy
+   29  apt install python-pip -y
+   30  apt install python-pipx -y
+   31  apt installpipx -y
+   32  apt install pipx -y
+   33  pip install NumPy
+   34  apt install nodejs -y
+   35  node -v
+   36  nodejs
+   38  apt install tomcat9 tomcat9-admin -y
+   39  apt install tomcat tomcat9-admin -y
+   40  apt install tomcat10 tomcat10-admin -y
+   41  systemctl status tomcat10
+   42  history
